@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gummy House - Каталог</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">🍬 Gummy House</h1>
+            <nav class="nav">
+                <a href="index.html">Главная</a>
+                <a href="catalog.html" class="active">Каталог</a>
+                <a href="cart.html" class="cart-link">🛒 Корзина (<span id="cart-count">0</span>)</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="catalog">
+            <div class="container">
+                <h2 class="section-title">🍬 Наш мармелад</h2>
+                <div class="bento-grid catalog-grid">
+                    <!-- Товар 1 -->
+                    <div class="product-card bento-item" data-id="1" data-name="Дельфинчики" data-price="150">
+                        <img src="images/dolphin.png" alt="Дельфинчики" class="product-img">
+                        <h3>Дельфинчики</h3>
+                        <p class="weight">100гр</p>
+                        <p class="price">150 ₽</p>
+                        <button class="add-to-cart-btn">Добавить в корзину</button>
+                    </div>
+                    <!-- Товар 2 -->
+                    <div class="product-card bento-item" data-id="2" data-name="Бананчики с нутеллой" data-price="100">
+                        <img src="images/banana.png" alt="Бананчики с нутеллой" class="product-img">
+                        <h3>Бананчики внутри с нутеллой</h3>
+                        <p class="weight">100гр</p>
+                        <p class="price">100 ₽</p>
+                        <button class="add-to-cart-btn">Добавить в корзину</button>
+                    </div>
+                    <!-- Товар 3 -->
+                    <div class="product-card bento-item" data-id="3" data-name="Мармеладный микс" data-price="300">
+                        <img src="images/mix.png" alt="Мармеладный микс" class="product-img">
+                        <h3>Мармеладный микс</h3>
+                        <p class="weight">100гр</p>
+                        <p class="price">300 ₽</p>
+                        <button class="add-to-cart-btn">Добавить в корзину</button>
+                    </div>
+                    <!-- Товар 4 -->
+                    <div class="product-card bento-item" data-id="4" data-name="Ленточки клубника" data-price="150">
+                        <img src="images/strawberry.png" alt="Ленточки клубника" class="product-img">
+                        <h3>Ленточки со вкусом клубники</h3>
+                        <p class="weight">100гр</p>
+                        <p class="price">150 ₽</p>
+                        <button class="add-to-cart-btn">Добавить в корзину</button>
+                    </div>
+                    <!-- Товар 5 -->
+                    <div class="product-card bento-item" data-id="5" data-name="Ленточки вишня" data-price="200">
+                        <img src="images/cherry.png" alt="Ленточки вишня" class="product-img">
+                        <h3>Ленточки со вкусом вишни</h3>
+                        <p class="weight">100гр</p>
+                        <p class="price">200 ₽</p>
+                        <button class="add-to-cart-btn">Добавить в корзину</button>
+                    </div>
+                    <!-- Товар 6 -->
+                    <div class="product-card bento-item" data-id="6" data-name="Ленточки бабл гам" data-price="100">
+                        <img src="images/bubblegum.png" alt="Ленточки бабл гам" class="product-img">
+                        <h3>Ленточки со вкусом бабл гам</h3>
+                        <p class="weight">100гр</p>
+                        <p class="price">100 ₽</p>
+                        <button class="add-to-cart-btn">Добавить в корзину</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Gummy House. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

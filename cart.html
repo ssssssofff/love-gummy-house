@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gummy House - Корзина</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">🍬 Gummy House</h1>
+            <nav class="nav">
+                <a href="index.html">Главная</a>
+                <a href="catalog.html">Каталог</a>
+                <a href="cart.html" class="active cart-link">🛒 Корзина (<span id="cart-count">0</span>)</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="cart-section">
+            <div class="container">
+                <h2 class="section-title">🛒 Ваша корзина</h2>
+                <div id="cart-items-container" class="bento-grid cart-grid">
+                    <!-- Сюда будут динамически добавляться товары из корзины -->
+                </div>
+                <div id="cart-total" class="cart-total">
+                    <h3>Итого: <span id="total-price">0</span> ₽</h3>
+                </div>
+                <div class="cart-actions">
+                    <a href="catalog.html" class="action-btn pink">Продолжить покупки</a>
+                    <button id="clear-cart-btn" class="action-btn yellow">Очистить корзину</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Gummy House. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

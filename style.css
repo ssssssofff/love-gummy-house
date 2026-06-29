@@ -1,0 +1,354 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #fff9f0; /* Светлый кремовый фон */
+    color: #4a2c1b;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: 1px;
+}
+
+/* Шапка */
+.header {
+    background-color: #ffb6c1; /* Розовый */
+    padding: 20px 0;
+    box-shadow: 0 4px 15px rgba(255, 182, 193, 0.5);
+    border-bottom: 5px solid #ffd700; /* Желтый */
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 2.2rem;
+    color: #fff;
+    text-shadow: 3px 3px 0 #ffd700;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    margin-left: 10px;
+    font-size: 1.1rem;
+}
+
+.nav a:hover, .nav a.active {
+    background-color: #ffd700;
+    color: #4a2c1b;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.5);
+}
+
+.cart-link {
+    background-color: #ff8da1;
+}
+
+/* Бенто-сетка */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin: 40px 0;
+}
+
+.bento-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 40px;
+    box-shadow: 0 8px 25px rgba(255, 182, 193, 0.3);
+    transition: transform 0.3s ease;
+    border: 3px solid #ffd700;
+}
+
+.bento-item:hover {
+    transform: translateY(-5px);
+}
+
+.pink {
+    background-color: #ffb6c1;
+    color: #fff;
+    border-color: #ff8da1;
+}
+
+.yellow {
+    background-color: #ffd700;
+    color: #4a2c1b;
+    border-color: #ffb300;
+}
+
+.wide {
+    grid-column: span 2;
+}
+
+/* Секция Герой */
+.hero .bento-item {
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 20px;
+}
+
+.hero-text h2 {
+    font-size: 3.2rem;
+    color: #ff6b81;
+    text-shadow: 3px 3px 0 #ffd700;
+}
+
+.hero-text p {
+    font-size: 1.4rem;
+    color: #4a2c1b;
+}
+
+.hero-image img {
+    border-radius: 40px;
+    border: 5px solid #ffd700;
+    box-shadow: 0 8px 25px rgba(255, 182, 193, 0.5);
+}
+
+/* Секция преимуществ */
+.features .bento-item {
+    text-align: center;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.features .bento-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.features .bento-item p {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+/* Секция действий */
+.actions-grid {
+    grid-template-columns: 1fr 1fr;
+}
+
+.action-btn {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 25px;
+    border-radius: 60px;
+    display: block;
+    transition: all 0.3s ease;
+    border: 4px solid #fff;
+}
+
+.action-btn.pink {
+    background-color: #ff6b81;
+    color: #fff;
+}
+
+.action-btn.yellow {
+    background-color: #ffd700;
+    color: #4a2c1b;
+}
+
+.action-btn:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Каталог */
+.section-title {
+    font-size: 2.8rem;
+    color: #ff6b81;
+    text-align: center;
+    margin: 30px 0;
+    text-shadow: 2px 2px 0 #ffd700;
+}
+
+.product-card {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 40px;
+    padding: 20px;
+    border: 4px solid #ffb6c1;
+}
+
+.product-img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 1.4rem;
+    color: #4a2c1b;
+    margin-bottom: 5px;
+}
+
+.product-card .weight {
+    font-weight: 700;
+    color: #888;
+}
+
+.product-card .price {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ff6b81;
+    margin: 10px 0;
+}
+
+.add-to-cart-btn {
+    background-color: #ffd700;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: #4a2c1b;
+    font-family: 'Nunito', sans-serif;
+    border: 2px solid #ffb300;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #ffb300;
+    transform: scale(1.05);
+}
+
+/* Корзина */
+.cart-grid {
+    grid-template-columns: 1fr;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 60px;
+    border: 3px solid #ffb6c1;
+}
+
+.cart-item-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cart-item-img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.cart-item-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.cart-item-price {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #ff6b81;
+}
+
+.remove-item-btn {
+    background-color: #ff6b81;
+    border: none;
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.remove-item-btn:hover {
+    background-color: #e74c5e;
+}
+
+.cart-total {
+    text-align: right;
+    font-size: 2rem;
+    background-color: #ffd700;
+    padding: 20px 30px;
+    border-radius: 60px;
+    margin: 20px 0;
+}
+
+.cart-actions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.cart-actions .action-btn {
+    padding: 15px 40px;
+    font-size: 1.4rem;
+}
+
+/* Подвал */
+.footer {
+    background-color: #ffb6c1;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 50px;
+    border-top: 5px solid #ffd700;
+    color: #fff;
+    font-weight: 700;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .nav a {
+        display: inline-block;
+        margin: 5px;
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+    .hero-text h2 {
+        font-size: 2.2rem;
+    }
+    .wide {
+        grid-column: span 1;
+    }
+    .actions-grid {
+        grid-template-columns: 1fr;
+    }
+    .bento-grid {
+        grid-template-columns: 1fr;
+    }
+}

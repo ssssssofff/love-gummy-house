@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gummy House - Главная</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Подключаем шрифт для красоты -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Шапка с названием и навигацией -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">🍬 Gummy House</h1>
+            <nav class="nav">
+                <a href="index.html" class="active">Главная</a>
+                <a href="catalog.html">Каталог</a>
+                <a href="cart.html" class="cart-link">🛒 Корзина (<span id="cart-count">0</span>)</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+        <!-- Секция герой (приветствие) -->
+        <section class="hero">
+            <div class="container bento-grid">
+                <div class="hero-text bento-item">
+                    <h2>Добро пожаловать в мир сладостей!</h2>
+                    <p>Самый вкусный мармелад только у нас.</p>
+                </div>
+                <div class="hero-image bento-item">
+                    <!-- Здесь будет ваша картинка -->
+                    <img src="images/banner.jpg" alt="Вкусный мармелад" style="width:100%; border-radius: 30px;">
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция преимуществ (бенто-сетка) -->
+        <section class="features">
+            <div class="container bento-grid">
+                <div class="feature-item bento-item pink">
+                    <h3>🍊 Натуральный сок</h3>
+                    <p>Сделан из натурального сока</p>
+                </div>
+                <div class="feature-item bento-item yellow">
+                    <h3>✅ Халяль</h3>
+                    <p>Сертифицированный халяль</p>
+                </div>
+                <div class="feature-item bento-item pink">
+                    <h3>🚫 Без сахара</h3>
+                    <p>Мармелад без сахара</p>
+                </div>
+                <div class="feature-item bento-item yellow wide">
+                    <h3>Почему выбирают нас?</h3>
+                    <p>Мы делаем мармелад с любовью, используя только лучшие ингредиенты. Наши сладости дарят радость детям и взрослым!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция с кнопками действий -->
+        <section class="actions">
+            <div class="container">
+                <div class="bento-grid actions-grid">
+                    <a href="catalog.html" class="action-btn bento-item pink">🍭 Смотреть каталог</a>
+                    <a href="https://wa.me/79889112868" target="_blank" class="action-btn bento-item yellow">💬 Связаться с нами</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Gummy House. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
